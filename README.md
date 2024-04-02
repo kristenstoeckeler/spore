@@ -1,11 +1,13 @@
 ## Welcome to Spore!
 Spore is a project I'm working on. It's in its baby phase, but feel free to poke around and check back soon for new developments!
 
+So far it's a Typescript React app using Next.js.
+
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `npm run dev`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
