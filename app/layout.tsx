@@ -1,5 +1,6 @@
+import '../app/ui/global.css';
 import type { Metadata } from 'next'
-import '../index.css'
+import { comfortaa,  eczar } from '../app/ui/font';
 
 export const metadata: Metadata = {
   title: 'Spore',
@@ -14,9 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <body>
-            <div id="root">{children}</div>
-        </body>
+      <body className={`${comfortaa.className} antialiased`}>{children}</body>
     </html>
   );
 }
