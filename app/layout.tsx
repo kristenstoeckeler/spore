@@ -1,6 +1,6 @@
 import '../app/ui/global.css';
 import type { Metadata } from 'next'
-import { comfortaa,  eczar } from '../app/ui/font';
+import { comfortaa } from '../app/ui/font';
 
 export const metadata: Metadata = {
   title: 'Spore',

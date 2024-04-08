@@ -1,4 +1,5 @@
-import { eczar } from "./ui/font" 
+import { lato } from "./ui/font" 
+import SporeLogo from "./ui/spore-logo"
  
  export function generateStaticParams() {
   return [{ slug: [''] }]
@@ -7,12 +8,15 @@ import { eczar } from "./ui/font"
 export default function Page() {
   return (
   <div className="App">
-      <header className="App-header">
-        <h1>Welcome to Spore!</h1>
-        <p className={eczar.className}>
-          Spore is a project I'm working on. It's in its baby phase, but feel free to poke around and check back soon for new developments!       
-        </p>
+      <header className="App-header m-2 md:m-10">
+        <SporeLogo/>
       </header>
+      <main className="mx-10 md:ml-40">
+        <h1 className={"text-wrap text-5xl md:text-8xl font-bold text-spore-green"}>WELCOME TO SPORE</h1>
+        <p className={`${lato.className} text-xl pt-5 md:text-2xl md:pt-10`}>
+          Spore is a project I'm working on. It's in its baby phase, but feel free to poke around and check back soon for new developments!
+        </p>
+      </main>        
     </div>
   )
 }
