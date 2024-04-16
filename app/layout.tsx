@@ -1,3 +1,4 @@
+import SporeLogo from './ui/spore-logo';
 import '../app/ui/global.css';
 import type { Metadata } from 'next'
 import { comfortaa } from '../app/ui/font';
@@ -15,7 +16,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${comfortaa.className} antialiased`}>{children}</body>
+      <body className={`${comfortaa.className} antialiased`}>
+        <header className="App-header m-2 md:m-10">
+          <SporeLogo/>
+        </header>
+        {children}
+      </body>
     </html>
+    
   );
 }
